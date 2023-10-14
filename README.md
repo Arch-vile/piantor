@@ -12,6 +12,8 @@ Key Switch: Choc Red Pro (Linear 35gf)
 Keycap: MBK Blank Black
 Plate / Case: Red PLA
 
+QMK and VIAL compatible keyboard.
+
 Keyboard specs: https://docs.beekeeb.com/piantor-keyboard
 
 # The Building Blocks: how does it all work?
@@ -28,7 +30,7 @@ In the context of keyboards, flashing means writing a new firmware to the keyboa
 
 QMK is a powerful firmware that provides the foundation for keyboard customization. It allows you to redefine what each key on your keyboard does, create multi-key macros, layer configurations, and more. However, to configure QMK, you typically need to edit the firmware's code directly, which can be complicated and intimidating for users without programming experience.
 
-## VIAL is the QMK bundler
+## VIAL is the QMK wrapper and configurator
 
 VIAL, on the other hand, is a configuration tool that provides a user-friendly graphical interface for customizing your keyboard. It's designed to work with keyboards that use QMK firmware, and it simplifies the process of customizing your keyboard by allowing you to make changes through its interface rather than editing code. It allows you to make changes realtime without separate flashing step.
 
@@ -40,6 +42,15 @@ So, to use VIAL, you would flash your keyboard with a version of QMK firmware th
 
 Download and flash the `beekeeb_piantor_weact_vial.uf2` from https://docs.beekeeb.com/piantor-keyboard (or from this REPO).
 
-Firmware
-it is running VIAL as firmware?
-But VIAL is also a config GUI tool? https://get.vial.today/
+# Using VIAL
+
+The default firmware from BeeKeeb is based on VIAL. To make configuration changes go to VIAL online configurator https://vial.rocks/. It should detect the keyboard and allow realitme configuration changes.
+
+NOTE: If you use the firmware from QMK online configurator https://config.qmk.fm/#/beekeeb/piantor/LAYOUT_split_3x6_3, you will lose the ability to use VIAL realtime configuration. You need to flash back the original firmware to get the VIAL features.
+
+# Using QMK
+
+Go to the QMK online configurator https://config.qmk.fm/#/beekeeb/piantor/LAYOUT_split_3x6_3. Make your config and build it. Download and flash the UF2 file.
+
+TODO: Add more detailed steps
+
